@@ -5,6 +5,7 @@ const imgController = require("../controller/imageController");
 const folderController = require("../controller/folderController");
 const itemController = require("../controller/itemController");
 
+// upload images multiple or single 
 router.post("/upload", upload.array("images", 5), imgController.uploadImage);
 
 // Folder routes
